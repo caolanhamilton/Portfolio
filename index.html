@@ -1,126 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DevJane Portfolio Website</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-        
-        <!-- Update these with your own fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-        
-        <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caolán's Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <script src="https://kit.fontawesome.com/f0cfa175c4.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Introduction -->
+    <header>
+      <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+          Hey! 👋 <strong>I'm Caolán</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">
+          {a software developer}
+        </p>
+        <img
+          src="images/headshot.jpg"
+          alt="headshot of Caolán"
+          class="intro__img"
+        />
+      </section>
+    </header>
+    <!-- About me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">About me</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Software Developer in Manchester
+      </p>
 
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <img src="img/devjane.png" alt="">
-            </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <!-- Introduction -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Hey! 👋 <strong>I'm Caolán</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro"> {a software developer}</p>
-            <img src="images/headshot.jpg" alt="headshot of Caolán" class="intro__img">
-        </section>
-        
-        
-        <!-- My services -->
-        <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">What I do</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>Design + Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div> <!-- / service -->
-                
-                <div class="service">
-                    <h3>E-Commerce</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div> <!-- / service -->
-                
-                <div class="service">
-                    <h3>WordPress</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div> <!-- / service -->
-            </div> <!-- / services -->
-            
-            <a href="#work" class="btn">My Work</a>
-        </section>
-        
-        
-        <!-- About me -->
-        <section class="about-me" id="about">
-           <h2 class="section__title section__title--about">About me</h2>
-           <p class="section__subtitle section__subtitle--about">Software Developer in Manchester</p>
-           
-           <div class="about-me__body">
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-           </div>
-           
-           <img src="images/meonbeach2.jpg" alt="Cartoon Caolan waving" class="about-me__img">
-        </section>
-        
-        <!-- My Work -->
-        <section class="my-work" id="work">
-            <h2 class="section__title section__title--work">My projects</h2>
-            <p class="section__subtitle section__subtitle--work">Checkout some of my projects!</p>
-            
-            <div class="portfolio">
-                <!-- Portfolio item 01 -->
-                <a href="#" class="portfolio__item">
-                    <img src="images/Rectangle 3-1.png" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 02 -->
-                <a href="#" class="portfolio__item">
-                    <img src="images/Rectangle 3-1.png" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 03 -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/portfolio-03.jpg" alt="" class="portfolio__img">
-                </a>
-                
-            </div>
-        </section>
-        
-        
-        <!-- Footer -->
-        <footer class="footer">
-            <!-- replace with your own email address -->
-            <h2>Contact me:</h2>
-            <a href="mailto:caolanhamilton75@gmail.com" class="footer__link">caolanhamilton75@gmail.com</a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://linkedin/caolan-hamilton">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com/caolanhamilton">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
+      <div class="about-me__body">
+        <p>
+          I decided to become a programmer because I am inspired by its
+          potential to make people’s lives easier and better. I love the
+          creative, problem-solving nature of software engineering and the
+          amazing feeling I get when solving hard problems, especially when
+          working in a team. I trained as a developer on the Northcoders
+          Programming Bootcamp. At Northcoders I developed a front-end project,
+          back-end project and group project utilising JavaScript, Express,
+          Node, PSQL and React.
+        </p>
+        <p>
+          Previously I worked as a Search Engine Evaluator, where I provided
+          human feedback on the relevancy, accuracy and trustworthiness of pages
+          returned by the world’s largest search engines in order to help
+          improve their algorithms. I developed excellent online research skills
+          in this role which I have found very useful whilst programming. I hope
+          you enjoy my site, I'd love to hear from you soon!
+        </p>
+      </div>
+
+      <img
+        src="images/meonbeach2.jpg"
+        alt="Cartoon Caolan waving"
+        class="about-me__img"
+      />
+    </section>
+    <!-- My tech stack & practices -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">My skills and technologies</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Back-end stack</h3>
+            <ul>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>PostgreSQL</li>
             </ul>
-        </footer>
-        
-    </body>
+        </div>
+        <!-- / service -->
+
+        <div class="service">
+          <h3>Front-end stack</h3>
+          <p>
+            <ul>
+                <li>React</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+          </p>
+        </div>
+
+        <div class="service">
+          <h3>Best practices</h3>
+          <p>
+            <ul>
+                <li>Git & GitHub</li>
+                <li>TDD using Jest</li>
+                <li>Pair programming</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My projects</h2>
+      <p class="section__subtitle section__subtitle--work">
+        Checkout some of my projects!
+      </p>
+
+      <div class="portfolio">
+        <!-- Portfolio item 01 -->
+        <a href="#" class="portfolio__item">
+          <img src="images/Rectangle 3-1.png" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 02 -->
+        <a href="#" class="portfolio__item">
+          <img src="images/Rectangle 3-1.png" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 03 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-03.jpg" alt="" class="portfolio__img" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <h2>Contact me:</h2>
+      <a href="mailto:caolanhamilton75@gmail.com" class="footer__link"
+        >caolanhamilton75@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://www.linkedin.com/in/caolan-hamilton/">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/caolanhamilton">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/caolanhamilton">
+            <i class="fab fa-solid fa-file"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
