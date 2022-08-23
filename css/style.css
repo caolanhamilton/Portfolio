@@ -123,7 +123,9 @@ h3 {
   margin-top: 0em;
   margin-right: 0.5em;
   margin-left: 0.5em;
+  text-align: left;
 }
+
 
 
 /*  Intro section  */
@@ -279,7 +281,7 @@ ul {
 .portfolio__item-text {
   padding-left: 0.3rem;
   padding-right: 0.3rem;
-
+  color: #fff;
 }
 
 
