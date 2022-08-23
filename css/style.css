@@ -30,7 +30,6 @@
   .section__title--about {
     padding-top: 3rem;
   }
-  
 }
 
 /* General styles */
@@ -122,7 +121,7 @@ a:visited {
 .section__subtitle--my-portfolio {
   color: var(--clr-accent);
   font-weight: var(--fw-bold);
-  margin-bottom: 2em;
+  margin-bottom: 0.5em;
 }
 
 .portfolio__item-text {
@@ -132,12 +131,10 @@ a:visited {
   text-align: left;
 }
 
-
-
 /*  Intro section  */
 
 .intro {
-    padding-top: 2rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
   position: relative;
   padding-bottom: 0px;
@@ -236,20 +233,54 @@ ul {
 }
 
 @media (min-width: 800px) {
-    .skillscotainer {
-        display: flex;
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .skill + .skill {
-        margin-left: 2em;
-    }
+  .skillscotainer {
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .skill + .skill {
+    margin-left: 2em;
+  }
 }
 
-
 /* My portfolio */
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio__item {
+  max-width: 100%;
+  border-radius: 1rem;
+  margin: 0.25rem;
+  background: var(--clr-accent);
+  color: var(--clr-light);
+  overflow: hidden;
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  .portfolio__item {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 800px) {
+  .portfolio__item {
+    max-width: 40%;
+    margin: 0.5rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .portfolio__item {
+    max-width: 30%;
+  }
+}
 
 .section__title--portfolio::after {
   content: "";
@@ -257,7 +288,7 @@ ul {
   width: 2em;
   height: 1px;
   margin: 0.5em auto 1em;
-  background:var(--clr-accent);
+  background: var(--clr-accent);
   opacity: 0.25;
 }
 
@@ -269,27 +300,11 @@ ul {
   padding-bottom: 2rem;
 }
 
-.portfolio {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.portfolio__item {
-  border-radius: 1rem;
-  margin: 0.25rem;
-  background: var(--clr-accent);
-  color: var(--clr-light);
-  overflow: hidden;
-  text-decoration: none;
-}
 .portfolio__item-text {
   padding-left: 0.3rem;
   padding-right: 0.3rem;
   color: #fff;
 }
-
 
 .portfolio__img {
   transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
