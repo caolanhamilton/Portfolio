@@ -87,6 +87,12 @@ h3 {
   font-size: var(--fs-h3);
 }
 
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 .section__title {
   margin-bottom: 0.25em;
 }
